@@ -1,0 +1,25 @@
+[0.815s] Invoking command in '/home/iris/RVI/build/odrive_demo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/iris/RVI/build/odrive_demo_description -- -j4 -l4
+[0.973s] Invoked command in '/home/iris/RVI/build/odrive_demo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/iris/RVI/build/odrive_demo_description -- -j4 -l4
+[1.130s] Invoking command in '/home/iris/RVI/build/odrive_demo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/iris/RVI/build/odrive_demo_description
+[1.169s] -- Install configuration: ""
+[1.171s] -- Execute custom install script
+[1.182s] -- Up-to-date symlink: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive.ros2_control.xacro
+[1.187s] -- Up-to-date symlink: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive.urdf.xacro
+[1.194s] -- Up-to-date symlink: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive_diffbot.urdf.xacro
+[1.197s] -- Up-to-date symlink: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive_rrbot.urdf.xacro
+[1.207s] -- Up-to-date symlink: /home/iris/RVI/install/odrive_demo_description/share/ament_index/resource_index/package_run_dependencies/odrive_demo_description
+[1.219s] -- Up-to-date symlink: /home/iris/RVI/install/odrive_demo_description/share/ament_index/resource_index/parent_prefix_path/odrive_demo_description
+[1.221s] -- Up-to-date symlink: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/environment/ament_prefix_path.sh
+[1.221s] -- Up-to-date symlink: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/environment/ament_prefix_path.dsv
+[1.222s] -- Up-to-date symlink: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/environment/path.sh
+[1.222s] -- Up-to-date symlink: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/environment/path.dsv
+[1.223s] -- Up-to-date symlink: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/local_setup.bash
+[1.223s] -- Up-to-date symlink: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/local_setup.sh
+[1.224s] -- Up-to-date symlink: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/local_setup.zsh
+[1.224s] -- Up-to-date symlink: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/local_setup.dsv
+[1.225s] -- Symlinking: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/package.dsv
+[1.247s] -- Up-to-date symlink: /home/iris/RVI/install/odrive_demo_description/share/ament_index/resource_index/packages/odrive_demo_description
+[1.249s] -- Up-to-date symlink: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/cmake/odrive_demo_descriptionConfig.cmake
+[1.249s] -- Up-to-date symlink: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/cmake/odrive_demo_descriptionConfig-version.cmake
+[1.250s] -- Up-to-date symlink: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/package.xml
+[1.262s] Invoked command in '/home/iris/RVI/build/odrive_demo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/iris/RVI/build/odrive_demo_description

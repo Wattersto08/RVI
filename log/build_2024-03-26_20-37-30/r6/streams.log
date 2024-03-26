@@ -1,0 +1,41 @@
+[0.328s] Invoking command in '/home/iris/RVI/build/r6': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/iris/RVI/src/r6 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/iris/RVI/install/r6
+[0.370s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.160s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.196s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.626s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.702s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.711s] -- Added test 'lint_cmake' to check CMake code style
+[1.717s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.753s] -- Added test 'xmllint' to check XML markup files
+[1.758s] -- Configuring done
+[1.779s] -- Generating done
+[1.790s] -- Build files have been written to: /home/iris/RVI/build/r6
+[1.805s] Invoked command in '/home/iris/RVI/build/r6' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/iris/RVI/src/r6 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/iris/RVI/install/r6
+[1.809s] Invoking command in '/home/iris/RVI/build/r6': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/iris/RVI/build/r6 -- -j4 -l4
+[1.965s] Invoked command in '/home/iris/RVI/build/r6' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/iris/RVI/build/r6 -- -j4 -l4
+[2.090s] Invoking command in '/home/iris/RVI/build/r6': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/iris/RVI/build/r6
+[2.119s] -- Install configuration: ""
+[2.121s] -- Execute custom install script
+[2.123s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/config/empty.yaml
+[2.163s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/description/inertial_macros.xacro
+[2.200s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/description/lidar.xacro
+[2.234s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/description/robot.urdf.xacro
+[2.268s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/description/robot_core.xacro
+[2.305s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/launch/rsp.launch.py
+[2.342s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/worlds/empty.world
+[2.379s] -- Symlinking: /home/iris/RVI/install/r6/share/ament_index/resource_index/package_run_dependencies/r6
+[2.416s] -- Symlinking: /home/iris/RVI/install/r6/share/ament_index/resource_index/parent_prefix_path/r6
+[2.453s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/environment/ament_prefix_path.sh
+[2.490s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/environment/ament_prefix_path.dsv
+[2.528s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/environment/path.sh
+[2.563s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/environment/path.dsv
+[2.601s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/local_setup.bash
+[2.647s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/local_setup.sh
+[2.679s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/local_setup.zsh
+[2.715s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/local_setup.dsv
+[2.751s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/package.dsv
+[2.790s] -- Symlinking: /home/iris/RVI/install/r6/share/ament_index/resource_index/packages/r6
+[2.824s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/cmake/r6Config.cmake
+[2.863s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/cmake/r6Config-version.cmake
+[2.901s] -- Symlinking: /home/iris/RVI/install/r6/share/r6/package.xml
+[3.125s] Invoked command in '/home/iris/RVI/build/r6' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/iris/RVI/build/r6

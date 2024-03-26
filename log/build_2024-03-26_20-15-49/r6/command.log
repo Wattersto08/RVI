@@ -1,0 +1,2 @@
+Invoking command in '/home/iris/RVI/build/r6': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/iris/RVI/src/r6 -DCMAKE_INSTALL_PREFIX=/home/iris/RVI/install/r6
+Invoked command in '/home/iris/RVI/build/r6' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/iris/RVI/src/r6 -DCMAKE_INSTALL_PREFIX=/home/iris/RVI/install/r6

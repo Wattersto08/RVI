@@ -1,0 +1,37 @@
+[0.460s] Invoking command in '/home/iris/RVI/build/odrive_hardware_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/iris/RVI/build/odrive_hardware_interface -- -j4 -l4
+[1.006s] [ 50%] Built target odrive_usb
+[1.353s] [100%] Built target odrive_hardware_interface
+[1.938s] Invoked command in '/home/iris/RVI/build/odrive_hardware_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/iris/RVI/build/odrive_hardware_interface -- -j4 -l4
+[2.088s] Invoking command in '/home/iris/RVI/build/odrive_hardware_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/iris/RVI/build/odrive_hardware_interface
+[2.122s] -- Install configuration: ""
+[2.123s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/odrive_hardware_interface.xml
+[2.124s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/include
+[2.125s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/include/odrive_hardware_interface
+[2.127s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/include/odrive_hardware_interface/visibility_control.hpp
+[2.130s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/include/odrive_hardware_interface/odrive_endpoints.hpp
+[2.131s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/include/odrive_hardware_interface/odrive_hardware_interface.hpp
+[2.131s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/include/odrive_hardware_interface/odrive_usb.hpp
+[2.132s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/environment/library_path.sh
+[2.132s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/environment/library_path.dsv
+[2.136s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/lib/libodrive_usb.so
+[2.143s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/lib/libodrive_hardware_interface.so
+[2.147s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/ament_index/resource_index/package_run_dependencies/odrive_hardware_interface
+[2.148s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/ament_index/resource_index/parent_prefix_path/odrive_hardware_interface
+[2.150s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/environment/ament_prefix_path.sh
+[2.152s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/environment/ament_prefix_path.dsv
+[2.154s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/environment/path.sh
+[2.156s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/environment/path.dsv
+[2.158s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/local_setup.bash
+[2.160s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/local_setup.sh
+[2.162s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/local_setup.zsh
+[2.164s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/local_setup.dsv
+[2.166s] -- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/package.dsv
+[2.173s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/ament_index/resource_index/packages/odrive_hardware_interface
+[2.183s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/odrive_hardware_interface
+[2.188s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.201s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.215s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[2.216s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/cmake/odrive_hardware_interfaceConfig.cmake
+[2.216s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/cmake/odrive_hardware_interfaceConfig-version.cmake
+[2.217s] -- Up-to-date: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/package.xml
+[2.218s] Invoked command in '/home/iris/RVI/build/odrive_hardware_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/iris/RVI/build/odrive_hardware_interface

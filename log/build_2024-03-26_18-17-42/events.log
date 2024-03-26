@@ -1,0 +1,613 @@
+[0.000000] (-) TimerEvent: {}
+[0.001885] (odrive_demo_description) JobQueued: {'identifier': 'odrive_demo_description', 'dependencies': OrderedDict()}
+[0.002456] (odrive_hardware_interface) JobQueued: {'identifier': 'odrive_hardware_interface', 'dependencies': OrderedDict()}
+[0.002753] (odrive_demo_bringup) JobQueued: {'identifier': 'odrive_demo_bringup', 'dependencies': OrderedDict([('odrive_demo_description', '/home/iris/RVI/install/odrive_demo_description')])}
+[0.002925] (odrive_ros2_control) JobQueued: {'identifier': 'odrive_ros2_control', 'dependencies': OrderedDict([('odrive_demo_description', '/home/iris/RVI/install/odrive_demo_description'), ('odrive_hardware_interface', '/home/iris/RVI/install/odrive_hardware_interface'), ('odrive_demo_bringup', '/home/iris/RVI/install/odrive_demo_bringup')])}
+[0.003271] (odrive_demo_description) JobStarted: {'identifier': 'odrive_demo_description'}
+[0.099194] (-) TimerEvent: {}
+[0.200109] (-) TimerEvent: {}
+[0.206889] (odrive_hardware_interface) JobStarted: {'identifier': 'odrive_hardware_interface'}
+[0.300274] (-) TimerEvent: {}
+[0.401247] (-) TimerEvent: {}
+[0.429203] (odrive_demo_description) JobProgress: {'identifier': 'odrive_demo_description', 'progress': 'cmake'}
+[0.430335] (odrive_demo_description) Command: {'cmd': ['/usr/bin/cmake', '/home/iris/RVI/src/odrive_ros2_control/odrive_demo_description', '-DCMAKE_INSTALL_PREFIX=/home/iris/RVI/install/odrive_demo_description'], 'cwd': '/home/iris/RVI/build/odrive_demo_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iris'), ('SSH_CLIENT', '192.168.8.140 59540 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/iris'), ('OLDPWD', '/home/iris/RVI/src'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f0c2494a-7a08-45aa-8000-17791dae9e18.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iris'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/home/iris/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/iris/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/iris/RVI/build/odrive_demo_description'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.140 59540 192.168.8.188 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.447213] (odrive_hardware_interface) JobProgress: {'identifier': 'odrive_hardware_interface', 'progress': 'cmake'}
+[0.448154] (odrive_hardware_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/iris/RVI/src/odrive_ros2_control/odrive_hardware_interface', '-DCMAKE_INSTALL_PREFIX=/home/iris/RVI/install/odrive_hardware_interface'], 'cwd': '/home/iris/RVI/build/odrive_hardware_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iris'), ('SSH_CLIENT', '192.168.8.140 59540 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/iris'), ('OLDPWD', '/home/iris/RVI/src'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f0c2494a-7a08-45aa-8000-17791dae9e18.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iris'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/home/iris/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/iris/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/iris/RVI/build/odrive_hardware_interface'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.140 59540 192.168.8.188 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.501473] (-) TimerEvent: {}
+[0.603177] (-) TimerEvent: {}
+[0.704069] (-) TimerEvent: {}
+[0.805149] (-) TimerEvent: {}
+[0.906050] (-) TimerEvent: {}
+[1.007046] (-) TimerEvent: {}
+[1.108151] (-) TimerEvent: {}
+[1.150148] (odrive_hardware_interface) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.151376] (odrive_demo_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.208279] (-) TimerEvent: {}
+[1.309281] (-) TimerEvent: {}
+[1.410605] (-) TimerEvent: {}
+[1.437689] (odrive_demo_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.438375] (odrive_hardware_interface) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.477900] (odrive_hardware_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.478565] (odrive_demo_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.510773] (-) TimerEvent: {}
+[1.613066] (-) TimerEvent: {}
+[1.714793] (-) TimerEvent: {}
+[1.815574] (-) TimerEvent: {}
+[1.824294] (odrive_hardware_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.826615] (odrive_demo_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.849917] (odrive_hardware_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.851722] (odrive_demo_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.854832] (odrive_demo_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.855382] (odrive_hardware_interface) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.857442] (odrive_hardware_interface) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.858053] (odrive_demo_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.872627] (odrive_demo_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.873399] (odrive_hardware_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.915758] (-) TimerEvent: {}
+[2.016992] (-) TimerEvent: {}
+[2.118958] (-) TimerEvent: {}
+[2.220363] (-) TimerEvent: {}
+[2.238004] (odrive_demo_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.238610] (odrive_hardware_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.264112] (odrive_hardware_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.265250] (odrive_hardware_interface) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.265945] (odrive_demo_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.266584] (odrive_demo_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.267202] (odrive_hardware_interface) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.267972] (odrive_demo_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.284541] (odrive_hardware_interface) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.7 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[2.285423] (odrive_demo_description) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.7 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[2.320545] (-) TimerEvent: {}
+[2.422672] (-) TimerEvent: {}
+[2.524656] (-) TimerEvent: {}
+[2.625439] (-) TimerEvent: {}
+[2.727078] (-) TimerEvent: {}
+[2.828895] (-) TimerEvent: {}
+[2.930260] (-) TimerEvent: {}
+[3.032003] (-) TimerEvent: {}
+[3.133670] (-) TimerEvent: {}
+[3.138790] (odrive_hardware_interface) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[3.153966] (odrive_demo_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[3.233856] (-) TimerEvent: {}
+[3.334608] (-) TimerEvent: {}
+[3.435609] (-) TimerEvent: {}
+[3.536993] (-) TimerEvent: {}
+[3.637790] (-) TimerEvent: {}
+[3.738525] (-) TimerEvent: {}
+[3.839244] (-) TimerEvent: {}
+[3.940199] (-) TimerEvent: {}
+[4.040073] (odrive_demo_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.040622] (-) TimerEvent: {}
+[4.058472] (odrive_demo_description) StdoutLine: {'line': b'-- Generating done\n'}
+[4.062553] (odrive_demo_description) StdoutLine: {'line': b'-- Build files have been written to: /home/iris/RVI/build/odrive_demo_description\n'}
+[4.077206] (odrive_demo_description) CommandEnded: {'returncode': 0}
+[4.078995] (odrive_demo_description) JobProgress: {'identifier': 'odrive_demo_description', 'progress': 'build'}
+[4.081267] (odrive_demo_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/iris/RVI/build/odrive_demo_description', '--', '-j4', '-l4'], 'cwd': '/home/iris/RVI/build/odrive_demo_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iris'), ('SSH_CLIENT', '192.168.8.140 59540 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/iris'), ('OLDPWD', '/home/iris/RVI/src'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f0c2494a-7a08-45aa-8000-17791dae9e18.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iris'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/home/iris/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/iris/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/iris/RVI/build/odrive_demo_description'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.140 59540 192.168.8.188 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.140845] (-) TimerEvent: {}
+[4.218800] (odrive_demo_description) CommandEnded: {'returncode': 0}
+[4.241069] (-) TimerEvent: {}
+[4.316190] (odrive_demo_description) JobProgress: {'identifier': 'odrive_demo_description', 'progress': 'install'}
+[4.341264] (-) TimerEvent: {}
+[4.346512] (odrive_demo_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/iris/RVI/build/odrive_demo_description'], 'cwd': '/home/iris/RVI/build/odrive_demo_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iris'), ('SSH_CLIENT', '192.168.8.140 59540 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/iris'), ('OLDPWD', '/home/iris/RVI/src'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f0c2494a-7a08-45aa-8000-17791dae9e18.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iris'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/home/iris/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/iris/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/iris/RVI/build/odrive_demo_description'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.140 59540 192.168.8.188 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.367504] (odrive_hardware_interface) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.376254] (odrive_demo_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.377017] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/urdf\n'}
+[4.377754] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive.urdf.xacro\n'}
+[4.378559] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive.ros2_control.xacro\n'}
+[4.379638] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive_rrbot.urdf.xacro\n'}
+[4.380547] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive_diffbot.urdf.xacro\n'}
+[4.382365] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/ament_index/resource_index/package_run_dependencies/odrive_demo_description\n'}
+[4.384022] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/ament_index/resource_index/parent_prefix_path/odrive_demo_description\n'}
+[4.385687] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/environment/ament_prefix_path.sh\n'}
+[4.386821] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/environment/ament_prefix_path.dsv\n'}
+[4.387966] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/environment/path.sh\n'}
+[4.389126] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/environment/path.dsv\n'}
+[4.390816] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/local_setup.bash\n'}
+[4.392068] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/local_setup.sh\n'}
+[4.393268] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/local_setup.zsh\n'}
+[4.394428] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/local_setup.dsv\n'}
+[4.395609] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/package.dsv\n'}
+[4.397034] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/ament_index/resource_index/packages/odrive_demo_description\n'}
+[4.398519] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/cmake/odrive_demo_descriptionConfig.cmake\n'}
+[4.399581] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/cmake/odrive_demo_descriptionConfig-version.cmake\n'}
+[4.400844] (odrive_demo_description) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/package.xml\n'}
+[4.406829] (odrive_demo_description) CommandEnded: {'returncode': 0}
+[4.409796] (odrive_hardware_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.441410] (-) TimerEvent: {}
+[4.466767] (odrive_hardware_interface) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.541601] (-) TimerEvent: {}
+[4.550057] (odrive_hardware_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.641924] (-) TimerEvent: {}
+[4.670838] (odrive_hardware_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.742119] (-) TimerEvent: {}
+[4.842997] (-) TimerEvent: {}
+[4.943876] (-) TimerEvent: {}
+[5.045372] (-) TimerEvent: {}
+[5.091057] (odrive_demo_description) JobEnded: {'identifier': 'odrive_demo_description', 'rc': 0}
+[5.095519] (odrive_demo_bringup) JobStarted: {'identifier': 'odrive_demo_bringup'}
+[5.145570] (-) TimerEvent: {}
+[5.246504] (-) TimerEvent: {}
+[5.345410] (odrive_demo_bringup) JobProgress: {'identifier': 'odrive_demo_bringup', 'progress': 'cmake'}
+[5.350899] (odrive_demo_bringup) Command: {'cmd': ['/usr/bin/cmake', '/home/iris/RVI/src/odrive_ros2_control/odrive_demo_bringup', '-DCMAKE_INSTALL_PREFIX=/home/iris/RVI/install/odrive_demo_bringup'], 'cwd': '/home/iris/RVI/build/odrive_demo_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iris'), ('SSH_CLIENT', '192.168.8.140 59540 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/iris'), ('OLDPWD', '/home/iris/RVI/src'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f0c2494a-7a08-45aa-8000-17791dae9e18.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iris'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/home/iris/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/iris/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/iris/RVI/install/odrive_demo_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/iris/RVI/build/odrive_demo_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.140 59540 192.168.8.188 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/iris/RVI/install/odrive_demo_description:/opt/ros/humble')]), 'shell': False}
+[5.355063] (-) TimerEvent: {}
+[5.455810] (-) TimerEvent: {}
+[5.556802] (-) TimerEvent: {}
+[5.603915] (odrive_demo_bringup) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[5.657000] (-) TimerEvent: {}
+[5.757938] (-) TimerEvent: {}
+[5.856690] (odrive_demo_bringup) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[5.858081] (-) TimerEvent: {}
+[5.884660] (odrive_demo_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.958269] (-) TimerEvent: {}
+[6.059039] (-) TimerEvent: {}
+[6.160090] (-) TimerEvent: {}
+[6.181968] (odrive_demo_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.206261] (odrive_demo_bringup) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.207086] (odrive_demo_bringup) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.208859] (odrive_demo_bringup) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.220296] (odrive_demo_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.260260] (-) TimerEvent: {}
+[6.361116] (-) TimerEvent: {}
+[6.463570] (-) TimerEvent: {}
+[6.563831] (odrive_demo_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.564739] (-) TimerEvent: {}
+[6.589338] (odrive_demo_bringup) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.590260] (odrive_demo_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.591993] (odrive_demo_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.610860] (odrive_demo_bringup) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.7 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[6.664936] (-) TimerEvent: {}
+[6.765765] (-) TimerEvent: {}
+[6.867172] (-) TimerEvent: {}
+[6.967916] (-) TimerEvent: {}
+[7.068626] (-) TimerEvent: {}
+[7.169399] (-) TimerEvent: {}
+[7.270227] (-) TimerEvent: {}
+[7.371048] (-) TimerEvent: {}
+[7.378533] (odrive_demo_bringup) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[7.471240] (-) TimerEvent: {}
+[7.572219] (-) TimerEvent: {}
+[7.673886] (-) TimerEvent: {}
+[7.723020] (odrive_hardware_interface) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[7.742695] (odrive_hardware_interface) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[7.774101] (-) TimerEvent: {}
+[7.875739] (-) TimerEvent: {}
+[7.945401] (odrive_hardware_interface) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[7.975889] (-) TimerEvent: {}
+[8.076803] (-) TimerEvent: {}
+[8.177824] (-) TimerEvent: {}
+[8.202076] (odrive_hardware_interface) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[8.223278] (odrive_hardware_interface) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[8.259737] (odrive_demo_bringup) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.277142] (odrive_demo_bringup) StdoutLine: {'line': b'-- Generating done\n'}
+[8.277912] (-) TimerEvent: {}
+[8.282010] (odrive_demo_bringup) StdoutLine: {'line': b'-- Build files have been written to: /home/iris/RVI/build/odrive_demo_bringup\n'}
+[8.296462] (odrive_hardware_interface) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[8.301385] (odrive_demo_bringup) CommandEnded: {'returncode': 0}
+[8.303472] (odrive_demo_bringup) JobProgress: {'identifier': 'odrive_demo_bringup', 'progress': 'build'}
+[8.306872] (odrive_demo_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/iris/RVI/build/odrive_demo_bringup', '--', '-j4', '-l4'], 'cwd': '/home/iris/RVI/build/odrive_demo_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iris'), ('SSH_CLIENT', '192.168.8.140 59540 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/iris'), ('OLDPWD', '/home/iris/RVI/src'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f0c2494a-7a08-45aa-8000-17791dae9e18.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iris'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/home/iris/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/iris/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/iris/RVI/install/odrive_demo_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/iris/RVI/build/odrive_demo_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.140 59540 192.168.8.188 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/iris/RVI/install/odrive_demo_description:/opt/ros/humble')]), 'shell': False}
+[8.336164] (odrive_hardware_interface) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[8.369179] (odrive_hardware_interface) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[8.378138] (-) TimerEvent: {}
+[8.405878] (odrive_hardware_interface) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.445838] (odrive_demo_bringup) CommandEnded: {'returncode': 0}
+[8.478339] (-) TimerEvent: {}
+[8.484190] (odrive_hardware_interface) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[8.547236] (odrive_demo_bringup) JobProgress: {'identifier': 'odrive_demo_bringup', 'progress': 'install'}
+[8.548183] (odrive_demo_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/iris/RVI/build/odrive_demo_bringup'], 'cwd': '/home/iris/RVI/build/odrive_demo_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iris'), ('SSH_CLIENT', '192.168.8.140 59540 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/iris'), ('OLDPWD', '/home/iris/RVI/src'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f0c2494a-7a08-45aa-8000-17791dae9e18.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iris'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/home/iris/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/iris/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/iris/RVI/install/odrive_demo_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/iris/RVI/build/odrive_demo_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.140 59540 192.168.8.188 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/iris/RVI/install/odrive_demo_description:/opt/ros/humble')]), 'shell': False}
+[8.578583] (-) TimerEvent: {}
+[8.582181] (odrive_demo_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.585050] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/config\n'}
+[8.585991] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/config/diffbot_controllers.yaml\n'}
+[8.586561] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/config/rrbot_controllers.yaml\n'}
+[8.587508] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/config/odrive_multi_interface_forward_controllers.yaml\n'}
+[8.588732] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/launch\n'}
+[8.589425] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/launch/odrive_multi_interface.launch.py\n'}
+[8.590772] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/launch/odrive_rrbot.launch.py\n'}
+[8.591948] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/launch/odrive_diffbot.launch.py\n'}
+[8.594393] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/ament_index/resource_index/package_run_dependencies/odrive_demo_bringup\n'}
+[8.596568] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/ament_index/resource_index/parent_prefix_path/odrive_demo_bringup\n'}
+[8.599119] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/environment/ament_prefix_path.sh\n'}
+[8.599774] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/environment/ament_prefix_path.dsv\n'}
+[8.600938] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/environment/path.sh\n'}
+[8.602244] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/environment/path.dsv\n'}
+[8.604175] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/local_setup.bash\n'}
+[8.605255] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/local_setup.sh\n'}
+[8.606256] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/local_setup.zsh\n'}
+[8.607383] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/local_setup.dsv\n'}
+[8.608636] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/package.dsv\n'}
+[8.610309] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/ament_index/resource_index/packages/odrive_demo_bringup\n'}
+[8.611622] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/cmake/odrive_demo_bringupConfig.cmake\n'}
+[8.612885] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/cmake/odrive_demo_bringupConfig-version.cmake\n'}
+[8.615161] (odrive_demo_bringup) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_demo_bringup/share/odrive_demo_bringup/package.xml\n'}
+[8.620821] (odrive_demo_bringup) CommandEnded: {'returncode': 0}
+[8.678807] (-) TimerEvent: {}
+[8.781786] (-) TimerEvent: {}
+[8.830843] (odrive_hardware_interface) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[8.832296] (odrive_hardware_interface) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.882118] (-) TimerEvent: {}
+[8.983911] (-) TimerEvent: {}
+[9.085085] (-) TimerEvent: {}
+[9.170186] (odrive_hardware_interface) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[9.174355] (odrive_hardware_interface) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[9.185320] (-) TimerEvent: {}
+[9.286609] (-) TimerEvent: {}
+[9.379550] (odrive_demo_bringup) JobEnded: {'identifier': 'odrive_demo_bringup', 'rc': 0}
+[9.386804] (-) TimerEvent: {}
+[9.487462] (-) TimerEvent: {}
+[9.588134] (-) TimerEvent: {}
+[9.688838] (-) TimerEvent: {}
+[9.789555] (-) TimerEvent: {}
+[9.844097] (odrive_hardware_interface) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[9.846322] (odrive_hardware_interface) StdoutLine: {'line': b"-- Checking for one of the modules 'libusb-1.0'\n"}
+[9.889741] (-) TimerEvent: {}
+[9.990534] (-) TimerEvent: {}
+[10.091309] (-) TimerEvent: {}
+[10.192029] (-) TimerEvent: {}
+[10.292718] (-) TimerEvent: {}
+[10.393435] (-) TimerEvent: {}
+[10.449826] (odrive_hardware_interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[10.493625] (-) TimerEvent: {}
+[10.594348] (-) TimerEvent: {}
+[10.617532] (odrive_hardware_interface) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[10.627587] (odrive_hardware_interface) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[10.628627] (odrive_hardware_interface) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/iris/RVI/src/odrive_ros2_control/odrive_hardware_interface/include\n'}
+[10.629020] (odrive_hardware_interface) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[10.637918] (odrive_hardware_interface) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[10.638462] (odrive_hardware_interface) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[10.642933] (odrive_hardware_interface) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[10.653448] (odrive_hardware_interface) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[10.654117] (odrive_hardware_interface) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[10.656273] (odrive_hardware_interface) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[10.672717] (odrive_hardware_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.694500] (-) TimerEvent: {}
+[10.795125] (-) TimerEvent: {}
+[10.895757] (-) TimerEvent: {}
+[10.928975] (odrive_hardware_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[10.937199] (odrive_hardware_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/iris/RVI/build/odrive_hardware_interface\n'}
+[10.982132] (odrive_hardware_interface) CommandEnded: {'returncode': 0}
+[10.984083] (odrive_hardware_interface) JobProgress: {'identifier': 'odrive_hardware_interface', 'progress': 'build'}
+[10.985272] (odrive_hardware_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/iris/RVI/build/odrive_hardware_interface', '--', '-j4', '-l4'], 'cwd': '/home/iris/RVI/build/odrive_hardware_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iris'), ('SSH_CLIENT', '192.168.8.140 59540 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/iris'), ('OLDPWD', '/home/iris/RVI/src'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f0c2494a-7a08-45aa-8000-17791dae9e18.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iris'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/home/iris/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/iris/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/iris/RVI/build/odrive_hardware_interface'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.140 59540 192.168.8.188 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.995943] (-) TimerEvent: {}
+[11.096793] (-) TimerEvent: {}
+[11.194895] (odrive_hardware_interface) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/odrive_usb.dir/src/odrive_usb.cpp.o\x1b[0m\n'}
+[11.196982] (-) TimerEvent: {}
+[11.297814] (-) TimerEvent: {}
+[11.398444] (-) TimerEvent: {}
+[11.499090] (-) TimerEvent: {}
+[11.599744] (-) TimerEvent: {}
+[11.700427] (-) TimerEvent: {}
+[11.801065] (-) TimerEvent: {}
+[11.901828] (-) TimerEvent: {}
+[12.002492] (-) TimerEvent: {}
+[12.103208] (-) TimerEvent: {}
+[12.203932] (-) TimerEvent: {}
+[12.304642] (-) TimerEvent: {}
+[12.405436] (-) TimerEvent: {}
+[12.506280] (-) TimerEvent: {}
+[12.607036] (-) TimerEvent: {}
+[12.707747] (-) TimerEvent: {}
+[12.808487] (-) TimerEvent: {}
+[12.909217] (-) TimerEvent: {}
+[13.010035] (-) TimerEvent: {}
+[13.110761] (-) TimerEvent: {}
+[13.211534] (-) TimerEvent: {}
+[13.312270] (-) TimerEvent: {}
+[13.413023] (-) TimerEvent: {}
+[13.513787] (-) TimerEvent: {}
+[13.614541] (-) TimerEvent: {}
+[13.715300] (-) TimerEvent: {}
+[13.815995] (-) TimerEvent: {}
+[13.916719] (-) TimerEvent: {}
+[14.017809] (-) TimerEvent: {}
+[14.070421] (odrive_hardware_interface) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libodrive_usb.so\x1b[0m\n'}
+[14.117916] (-) TimerEvent: {}
+[14.218666] (-) TimerEvent: {}
+[14.319673] (-) TimerEvent: {}
+[14.420498] (-) TimerEvent: {}
+[14.521405] (-) TimerEvent: {}
+[14.622284] (-) TimerEvent: {}
+[14.664470] (odrive_hardware_interface) StdoutLine: {'line': b'[ 50%] Built target odrive_usb\n'}
+[14.722490] (-) TimerEvent: {}
+[14.745969] (odrive_hardware_interface) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/odrive_hardware_interface.dir/src/odrive_hardware_interface.cpp.o\x1b[0m\n'}
+[14.822675] (-) TimerEvent: {}
+[14.923535] (-) TimerEvent: {}
+[15.024313] (-) TimerEvent: {}
+[15.124978] (-) TimerEvent: {}
+[15.225637] (-) TimerEvent: {}
+[15.326278] (-) TimerEvent: {}
+[15.426930] (-) TimerEvent: {}
+[15.527609] (-) TimerEvent: {}
+[15.628311] (-) TimerEvent: {}
+[15.728963] (-) TimerEvent: {}
+[15.829637] (-) TimerEvent: {}
+[15.930319] (-) TimerEvent: {}
+[16.030964] (-) TimerEvent: {}
+[16.131598] (-) TimerEvent: {}
+[16.232412] (-) TimerEvent: {}
+[16.333156] (-) TimerEvent: {}
+[16.434077] (-) TimerEvent: {}
+[16.534834] (-) TimerEvent: {}
+[16.635476] (-) TimerEvent: {}
+[16.736153] (-) TimerEvent: {}
+[16.836959] (-) TimerEvent: {}
+[16.937704] (-) TimerEvent: {}
+[17.038424] (-) TimerEvent: {}
+[17.139187] (-) TimerEvent: {}
+[17.239941] (-) TimerEvent: {}
+[17.340712] (-) TimerEvent: {}
+[17.441466] (-) TimerEvent: {}
+[17.542368] (-) TimerEvent: {}
+[17.643342] (-) TimerEvent: {}
+[17.744236] (-) TimerEvent: {}
+[17.845119] (-) TimerEvent: {}
+[17.945879] (-) TimerEvent: {}
+[18.046674] (-) TimerEvent: {}
+[18.147473] (-) TimerEvent: {}
+[18.248273] (-) TimerEvent: {}
+[18.349128] (-) TimerEvent: {}
+[18.449871] (-) TimerEvent: {}
+[18.550590] (-) TimerEvent: {}
+[18.651392] (-) TimerEvent: {}
+[18.752114] (-) TimerEvent: {}
+[18.852964] (-) TimerEvent: {}
+[18.953808] (-) TimerEvent: {}
+[19.054659] (-) TimerEvent: {}
+[19.155468] (-) TimerEvent: {}
+[19.256292] (-) TimerEvent: {}
+[19.357134] (-) TimerEvent: {}
+[19.457910] (-) TimerEvent: {}
+[19.558657] (-) TimerEvent: {}
+[19.659399] (-) TimerEvent: {}
+[19.760153] (-) TimerEvent: {}
+[19.860944] (-) TimerEvent: {}
+[19.961754] (-) TimerEvent: {}
+[20.062473] (-) TimerEvent: {}
+[20.163187] (-) TimerEvent: {}
+[20.263959] (-) TimerEvent: {}
+[20.364756] (-) TimerEvent: {}
+[20.465461] (-) TimerEvent: {}
+[20.566220] (-) TimerEvent: {}
+[20.666949] (-) TimerEvent: {}
+[20.767668] (-) TimerEvent: {}
+[20.868386] (-) TimerEvent: {}
+[20.969156] (-) TimerEvent: {}
+[21.069947] (-) TimerEvent: {}
+[21.170642] (-) TimerEvent: {}
+[21.271390] (-) TimerEvent: {}
+[21.372118] (-) TimerEvent: {}
+[21.472871] (-) TimerEvent: {}
+[21.573863] (-) TimerEvent: {}
+[21.674711] (-) TimerEvent: {}
+[21.775457] (-) TimerEvent: {}
+[21.876190] (-) TimerEvent: {}
+[21.976917] (-) TimerEvent: {}
+[22.077686] (-) TimerEvent: {}
+[22.178388] (-) TimerEvent: {}
+[22.279121] (-) TimerEvent: {}
+[22.379875] (-) TimerEvent: {}
+[22.480613] (-) TimerEvent: {}
+[22.581421] (-) TimerEvent: {}
+[22.682391] (-) TimerEvent: {}
+[22.783271] (-) TimerEvent: {}
+[22.884147] (-) TimerEvent: {}
+[22.984991] (-) TimerEvent: {}
+[23.085779] (-) TimerEvent: {}
+[23.186550] (-) TimerEvent: {}
+[23.287349] (-) TimerEvent: {}
+[23.388089] (-) TimerEvent: {}
+[23.488870] (-) TimerEvent: {}
+[23.589665] (-) TimerEvent: {}
+[23.690398] (-) TimerEvent: {}
+[23.791147] (-) TimerEvent: {}
+[23.891977] (-) TimerEvent: {}
+[23.992863] (-) TimerEvent: {}
+[24.093786] (-) TimerEvent: {}
+[24.194749] (-) TimerEvent: {}
+[24.295545] (-) TimerEvent: {}
+[24.396285] (-) TimerEvent: {}
+[24.497077] (-) TimerEvent: {}
+[24.597915] (-) TimerEvent: {}
+[24.698664] (-) TimerEvent: {}
+[24.799397] (-) TimerEvent: {}
+[24.900126] (-) TimerEvent: {}
+[25.000851] (-) TimerEvent: {}
+[25.101673] (-) TimerEvent: {}
+[25.202532] (-) TimerEvent: {}
+[25.303381] (-) TimerEvent: {}
+[25.404167] (-) TimerEvent: {}
+[25.504883] (-) TimerEvent: {}
+[25.605681] (-) TimerEvent: {}
+[25.706377] (-) TimerEvent: {}
+[25.807101] (-) TimerEvent: {}
+[25.907845] (-) TimerEvent: {}
+[26.008598] (-) TimerEvent: {}
+[26.109398] (-) TimerEvent: {}
+[26.210197] (-) TimerEvent: {}
+[26.310915] (-) TimerEvent: {}
+[26.411681] (-) TimerEvent: {}
+[26.512373] (-) TimerEvent: {}
+[26.613107] (-) TimerEvent: {}
+[26.713909] (-) TimerEvent: {}
+[26.814726] (-) TimerEvent: {}
+[26.915437] (-) TimerEvent: {}
+[27.016165] (-) TimerEvent: {}
+[27.116921] (-) TimerEvent: {}
+[27.217783] (-) TimerEvent: {}
+[27.318517] (-) TimerEvent: {}
+[27.419269] (-) TimerEvent: {}
+[27.520067] (-) TimerEvent: {}
+[27.620939] (-) TimerEvent: {}
+[27.721822] (-) TimerEvent: {}
+[27.822959] (-) TimerEvent: {}
+[27.924003] (-) TimerEvent: {}
+[28.024808] (-) TimerEvent: {}
+[28.125623] (-) TimerEvent: {}
+[28.226496] (-) TimerEvent: {}
+[28.327279] (-) TimerEvent: {}
+[28.427970] (-) TimerEvent: {}
+[28.528736] (-) TimerEvent: {}
+[28.629567] (-) TimerEvent: {}
+[28.730295] (-) TimerEvent: {}
+[28.830986] (-) TimerEvent: {}
+[28.931774] (-) TimerEvent: {}
+[29.032620] (-) TimerEvent: {}
+[29.133490] (-) TimerEvent: {}
+[29.234355] (-) TimerEvent: {}
+[29.335174] (-) TimerEvent: {}
+[29.435893] (-) TimerEvent: {}
+[29.536593] (-) TimerEvent: {}
+[29.637323] (-) TimerEvent: {}
+[29.738094] (-) TimerEvent: {}
+[29.838791] (-) TimerEvent: {}
+[29.939545] (-) TimerEvent: {}
+[30.040338] (-) TimerEvent: {}
+[30.141038] (-) TimerEvent: {}
+[30.241890] (-) TimerEvent: {}
+[30.342750] (-) TimerEvent: {}
+[30.443577] (-) TimerEvent: {}
+[30.544495] (-) TimerEvent: {}
+[30.621372] (odrive_hardware_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libodrive_hardware_interface.so\x1b[0m\n'}
+[30.644685] (-) TimerEvent: {}
+[30.745654] (-) TimerEvent: {}
+[30.846718] (-) TimerEvent: {}
+[30.947623] (-) TimerEvent: {}
+[31.048534] (-) TimerEvent: {}
+[31.149826] (-) TimerEvent: {}
+[31.250988] (-) TimerEvent: {}
+[31.351892] (-) TimerEvent: {}
+[31.452703] (-) TimerEvent: {}
+[31.553595] (-) TimerEvent: {}
+[31.641964] (odrive_hardware_interface) StdoutLine: {'line': b'[100%] Built target odrive_hardware_interface\n'}
+[31.653774] (-) TimerEvent: {}
+[31.679358] (odrive_hardware_interface) CommandEnded: {'returncode': 0}
+[31.753970] (-) TimerEvent: {}
+[31.813033] (odrive_hardware_interface) JobProgress: {'identifier': 'odrive_hardware_interface', 'progress': 'install'}
+[31.816234] (odrive_hardware_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/iris/RVI/build/odrive_hardware_interface'], 'cwd': '/home/iris/RVI/build/odrive_hardware_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iris'), ('SSH_CLIENT', '192.168.8.140 59540 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/iris'), ('OLDPWD', '/home/iris/RVI/src'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f0c2494a-7a08-45aa-8000-17791dae9e18.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iris'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/home/iris/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/iris/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/iris/RVI/build/odrive_hardware_interface'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.140 59540 192.168.8.188 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[31.847573] (odrive_hardware_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[31.848275] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/odrive_hardware_interface.xml\n'}
+[31.849475] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/include\n'}
+[31.850085] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/include/odrive_hardware_interface\n'}
+[31.850626] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/include/odrive_hardware_interface/visibility_control.hpp\n'}
+[31.851816] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/include/odrive_hardware_interface/odrive_endpoints.hpp\n'}
+[31.853412] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/include/odrive_hardware_interface/odrive_hardware_interface.hpp\n'}
+[31.853962] (-) TimerEvent: {}
+[31.855089] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/include/odrive_hardware_interface/odrive_usb.hpp\n'}
+[31.856660] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/environment/library_path.sh\n'}
+[31.857750] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/environment/library_path.dsv\n'}
+[31.859149] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/lib/libodrive_usb.so\n'}
+[31.862942] (odrive_hardware_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/iris/RVI/install/odrive_hardware_interface/lib/libodrive_usb.so" to ""\n'}
+[31.863883] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/lib/libodrive_hardware_interface.so\n'}
+[31.871501] (odrive_hardware_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/iris/RVI/install/odrive_hardware_interface/lib/libodrive_hardware_interface.so" to ""\n'}
+[31.872454] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/ament_index/resource_index/package_run_dependencies/odrive_hardware_interface\n'}
+[31.874431] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/ament_index/resource_index/parent_prefix_path/odrive_hardware_interface\n'}
+[31.875715] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/environment/ament_prefix_path.sh\n'}
+[31.876895] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/environment/ament_prefix_path.dsv\n'}
+[31.878066] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/environment/path.sh\n'}
+[31.879136] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/environment/path.dsv\n'}
+[31.880272] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/local_setup.bash\n'}
+[31.881395] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/local_setup.sh\n'}
+[31.882919] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/local_setup.zsh\n'}
+[31.884200] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/local_setup.dsv\n'}
+[31.885386] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/package.dsv\n'}
+[31.886832] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/ament_index/resource_index/packages/odrive_hardware_interface\n'}
+[31.888333] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/odrive_hardware_interface\n'}
+[31.889944] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[31.891273] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[31.892821] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[31.894340] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/cmake/odrive_hardware_interfaceConfig.cmake\n'}
+[31.895564] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/cmake/odrive_hardware_interfaceConfig-version.cmake\n'}
+[31.896779] (odrive_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_hardware_interface/share/odrive_hardware_interface/package.xml\n'}
+[31.902563] (odrive_hardware_interface) CommandEnded: {'returncode': 0}
+[31.980001] (-) TimerEvent: {}
+[32.081956] (-) TimerEvent: {}
+[32.183843] (-) TimerEvent: {}
+[32.284680] (-) TimerEvent: {}
+[32.385461] (-) TimerEvent: {}
+[32.486562] (-) TimerEvent: {}
+[32.587767] (-) TimerEvent: {}
+[32.688792] (-) TimerEvent: {}
+[32.698019] (odrive_hardware_interface) JobEnded: {'identifier': 'odrive_hardware_interface', 'rc': 0}
+[32.701284] (odrive_ros2_control) JobStarted: {'identifier': 'odrive_ros2_control'}
+[32.788942] (-) TimerEvent: {}
+[32.890441] (-) TimerEvent: {}
+[32.926506] (odrive_ros2_control) JobProgress: {'identifier': 'odrive_ros2_control', 'progress': 'cmake'}
+[32.932567] (odrive_ros2_control) Command: {'cmd': ['/usr/bin/cmake', '/home/iris/RVI/src/odrive_ros2_control/odrive_ros2_control', '-DCMAKE_INSTALL_PREFIX=/home/iris/RVI/install/odrive_ros2_control'], 'cwd': '/home/iris/RVI/build/odrive_ros2_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iris'), ('SSH_CLIENT', '192.168.8.140 59540 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/iris/RVI/install/odrive_hardware_interface/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/iris'), ('OLDPWD', '/home/iris/RVI/src'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f0c2494a-7a08-45aa-8000-17791dae9e18.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iris'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/home/iris/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/iris/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/iris/RVI/install/odrive_demo_bringup:/home/iris/RVI/install/odrive_hardware_interface:/home/iris/RVI/install/odrive_demo_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/iris/RVI/build/odrive_ros2_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.140 59540 192.168.8.188 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/iris/RVI/install/odrive_demo_bringup:/home/iris/RVI/install/odrive_hardware_interface:/home/iris/RVI/install/odrive_demo_description:/opt/ros/humble')]), 'shell': False}
+[32.990641] (-) TimerEvent: {}
+[33.091423] (-) TimerEvent: {}
+[33.190977] (odrive_ros2_control) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[33.191645] (-) TimerEvent: {}
+[33.292301] (-) TimerEvent: {}
+[33.393101] (-) TimerEvent: {}
+[33.439955] (odrive_ros2_control) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[33.471712] (odrive_ros2_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[33.493202] (-) TimerEvent: {}
+[33.593935] (-) TimerEvent: {}
+[33.694677] (-) TimerEvent: {}
+[33.781914] (odrive_ros2_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[33.794830] (-) TimerEvent: {}
+[33.809351] (odrive_ros2_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[33.810173] (odrive_ros2_control) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[33.811589] (odrive_ros2_control) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[33.822406] (odrive_ros2_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[33.895006] (-) TimerEvent: {}
+[33.996107] (-) TimerEvent: {}
+[34.096890] (-) TimerEvent: {}
+[34.174571] (odrive_ros2_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[34.197075] (-) TimerEvent: {}
+[34.203379] (odrive_ros2_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[34.204681] (odrive_ros2_control) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[34.206872] (odrive_ros2_control) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[34.227874] (odrive_ros2_control) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.7 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[34.297250] (-) TimerEvent: {}
+[34.398001] (-) TimerEvent: {}
+[34.498626] (-) TimerEvent: {}
+[34.599270] (-) TimerEvent: {}
+[34.699999] (-) TimerEvent: {}
+[34.800650] (-) TimerEvent: {}
+[34.901318] (-) TimerEvent: {}
+[34.950340] (odrive_ros2_control) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[35.001534] (-) TimerEvent: {}
+[35.102442] (-) TimerEvent: {}
+[35.203821] (-) TimerEvent: {}
+[35.304836] (-) TimerEvent: {}
+[35.405770] (-) TimerEvent: {}
+[35.506445] (-) TimerEvent: {}
+[35.607408] (-) TimerEvent: {}
+[35.708079] (-) TimerEvent: {}
+[35.774667] (odrive_ros2_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[35.792110] (odrive_ros2_control) StdoutLine: {'line': b'-- Generating done\n'}
+[35.796484] (odrive_ros2_control) StdoutLine: {'line': b'-- Build files have been written to: /home/iris/RVI/build/odrive_ros2_control\n'}
+[35.808317] (-) TimerEvent: {}
+[35.811136] (odrive_ros2_control) CommandEnded: {'returncode': 0}
+[35.812902] (odrive_ros2_control) JobProgress: {'identifier': 'odrive_ros2_control', 'progress': 'build'}
+[35.816679] (odrive_ros2_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/iris/RVI/build/odrive_ros2_control', '--', '-j4', '-l4'], 'cwd': '/home/iris/RVI/build/odrive_ros2_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iris'), ('SSH_CLIENT', '192.168.8.140 59540 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/iris/RVI/install/odrive_hardware_interface/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/iris'), ('OLDPWD', '/home/iris/RVI/src'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f0c2494a-7a08-45aa-8000-17791dae9e18.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iris'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/home/iris/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/iris/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/iris/RVI/install/odrive_demo_bringup:/home/iris/RVI/install/odrive_hardware_interface:/home/iris/RVI/install/odrive_demo_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/iris/RVI/build/odrive_ros2_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.140 59540 192.168.8.188 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/iris/RVI/install/odrive_demo_bringup:/home/iris/RVI/install/odrive_hardware_interface:/home/iris/RVI/install/odrive_demo_description:/opt/ros/humble')]), 'shell': False}
+[35.908523] (-) TimerEvent: {}
+[35.962115] (odrive_ros2_control) CommandEnded: {'returncode': 0}
+[36.008680] (-) TimerEvent: {}
+[36.059433] (odrive_ros2_control) JobProgress: {'identifier': 'odrive_ros2_control', 'progress': 'install'}
+[36.060369] (odrive_ros2_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/iris/RVI/build/odrive_ros2_control'], 'cwd': '/home/iris/RVI/build/odrive_ros2_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iris'), ('SSH_CLIENT', '192.168.8.140 59540 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/iris/RVI/install/odrive_hardware_interface/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/iris'), ('OLDPWD', '/home/iris/RVI/src'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f0c2494a-7a08-45aa-8000-17791dae9e18.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iris'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iris/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/home/iris/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/iris/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/iris/RVI/install/odrive_demo_bringup:/home/iris/RVI/install/odrive_hardware_interface:/home/iris/RVI/install/odrive_demo_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/iris/RVI/build/odrive_ros2_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.140 59540 192.168.8.188 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/iris/RVI/install/odrive_demo_bringup:/home/iris/RVI/install/odrive_hardware_interface:/home/iris/RVI/install/odrive_demo_description:/opt/ros/humble')]), 'shell': False}
+[36.094747] (odrive_ros2_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[36.095669] (odrive_ros2_control) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_ros2_control/share/ament_index/resource_index/package_run_dependencies/odrive_ros2_control\n'}
+[36.097322] (odrive_ros2_control) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_ros2_control/share/ament_index/resource_index/parent_prefix_path/odrive_ros2_control\n'}
+[36.098865] (odrive_ros2_control) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/environment/ament_prefix_path.sh\n'}
+[36.099984] (odrive_ros2_control) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/environment/ament_prefix_path.dsv\n'}
+[36.101128] (odrive_ros2_control) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/environment/path.sh\n'}
+[36.102614] (odrive_ros2_control) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/environment/path.dsv\n'}
+[36.103679] (odrive_ros2_control) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.bash\n'}
+[36.104837] (odrive_ros2_control) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.sh\n'}
+[36.105984] (odrive_ros2_control) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.zsh\n'}
+[36.107063] (odrive_ros2_control) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.dsv\n'}
+[36.108073] (odrive_ros2_control) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/package.dsv\n'}
+[36.108774] (-) TimerEvent: {}
+[36.109679] (odrive_ros2_control) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_ros2_control/share/ament_index/resource_index/packages/odrive_ros2_control\n'}
+[36.111109] (odrive_ros2_control) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/cmake/odrive_ros2_controlConfig.cmake\n'}
+[36.112185] (odrive_ros2_control) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/cmake/odrive_ros2_controlConfig-version.cmake\n'}
+[36.113381] (odrive_ros2_control) StdoutLine: {'line': b'-- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/package.xml\n'}
+[36.119542] (odrive_ros2_control) CommandEnded: {'returncode': 0}
+[36.209029] (-) TimerEvent: {}
+[36.310971] (-) TimerEvent: {}
+[36.411665] (-) TimerEvent: {}
+[36.512422] (-) TimerEvent: {}
+[36.613851] (-) TimerEvent: {}
+[36.705905] (odrive_ros2_control) JobEnded: {'identifier': 'odrive_ros2_control', 'rc': 0}
+[36.709062] (-) EventReactorShutdown: {}

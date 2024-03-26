@@ -1,0 +1,28 @@
+[0.268s] Invoking command in '/home/iris/RVI/build/r6': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/iris/RVI/src/r6 -DCMAKE_INSTALL_PREFIX=/home/iris/RVI/install/r6
+[0.543s] -- The C compiler identification is GNU 11.4.0
+[0.823s] -- The CXX compiler identification is GNU 11.4.0
+[0.854s] -- Detecting C compiler ABI info
+[1.186s] -- Detecting C compiler ABI info - done
+[1.213s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.214s] -- Detecting C compile features
+[1.215s] -- Detecting C compile features - done
+[1.230s] -- Detecting CXX compiler ABI info
+[1.573s] -- Detecting CXX compiler ABI info - done
+[1.597s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.598s] -- Detecting CXX compile features
+[1.599s] -- Detecting CXX compile features - done
+[1.623s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.448s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.971s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.263s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):
+[3.265s]   ament_package_xml() package name 'r6' in '/package.xml' does not match
+[3.265s]   current PROJECT_NAME 'my_bot'.  You must call project() with the same
+[3.268s]   package name before.
+[3.270s] Call Stack (most recent call first):
+[3.272s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[3.273s]   CMakeLists.txt:32 (ament_lint_auto_find_test_dependencies)
+[3.275s] 
+[3.276s] [0m
+[3.277s] -- Configuring incomplete, errors occurred!
+[3.279s] See also "/home/iris/RVI/build/r6/CMakeFiles/CMakeOutput.log".
+[3.759s] Invoked command in '/home/iris/RVI/build/r6' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/iris/RVI/src/r6 -DCMAKE_INSTALL_PREFIX=/home/iris/RVI/install/r6

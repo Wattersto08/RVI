@@ -1,0 +1,24 @@
+[6.675s] Invoking command in '/home/iris/RVI/src/r6': PYTHONPATH=/home/iris/RVI/build/r6/prefix_override:/home/iris/RVI/install/r6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/r6 build --build-base /home/iris/RVI/build/r6/build install --record /home/iris/RVI/build/r6/install.log --single-version-externally-managed
+[8.399s] running egg_info
+[8.403s] writing ../../build/r6/r6.egg-info/PKG-INFO
+[8.409s] writing dependency_links to ../../build/r6/r6.egg-info/dependency_links.txt
+[8.413s] writing entry points to ../../build/r6/r6.egg-info/entry_points.txt
+[8.419s] writing requirements to ../../build/r6/r6.egg-info/requires.txt
+[8.423s] writing top-level names to ../../build/r6/r6.egg-info/top_level.txt
+[8.430s] reading manifest file '../../build/r6/r6.egg-info/SOURCES.txt'
+[8.442s] adding license file 'LICENSE'
+[8.445s] writing manifest file '../../build/r6/r6.egg-info/SOURCES.txt'
+[8.448s] running build
+[8.449s] running build_py
+[8.449s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[8.450s]   warnings.warn(
+[8.450s] running install
+[8.451s] running install_lib
+[8.451s] running install_data
+[8.452s] copying package.xml -> /home/iris/RVI/install/r6/share/r6
+[8.452s] running install_egg_info
+[8.460s] removing '/home/iris/RVI/install/r6/lib/python3.10/site-packages/r6-0.0.0-py3.10.egg-info' (and everything under it)
+[8.461s] Copying ../../build/r6/r6.egg-info to /home/iris/RVI/install/r6/lib/python3.10/site-packages/r6-0.0.0-py3.10.egg-info
+[8.461s] running install_scripts
+[8.570s] writing list of installed files to '/home/iris/RVI/build/r6/install.log'
+[9.309s] Invoked command in '/home/iris/RVI/src/r6' returned '0': PYTHONPATH=/home/iris/RVI/build/r6/prefix_override:/home/iris/RVI/install/r6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/r6 build --build-base /home/iris/RVI/build/r6/build install --record /home/iris/RVI/build/r6/install.log --single-version-externally-managed

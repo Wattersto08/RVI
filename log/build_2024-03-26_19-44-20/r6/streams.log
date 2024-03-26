@@ -1,0 +1,36 @@
+[6.477s] Invoking command in '/home/iris/RVI/src/r6': PYTHONPATH=/home/iris/RVI/build/r6/prefix_override:/home/iris/RVI/install/r6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/r6 build --build-base /home/iris/RVI/build/r6/build install --record /home/iris/RVI/build/r6/install.log --single-version-externally-managed
+[8.266s] running egg_info
+[8.270s] creating ../../build/r6/r6.egg-info
+[8.271s] writing ../../build/r6/r6.egg-info/PKG-INFO
+[8.272s] writing dependency_links to ../../build/r6/r6.egg-info/dependency_links.txt
+[8.273s] writing entry points to ../../build/r6/r6.egg-info/entry_points.txt
+[8.273s] writing requirements to ../../build/r6/r6.egg-info/requires.txt
+[8.277s] writing top-level names to ../../build/r6/r6.egg-info/top_level.txt
+[8.284s] writing manifest file '../../build/r6/r6.egg-info/SOURCES.txt'
+[8.294s] reading manifest file '../../build/r6/r6.egg-info/SOURCES.txt'
+[8.297s] adding license file 'LICENSE'
+[8.301s] writing manifest file '../../build/r6/r6.egg-info/SOURCES.txt'
+[8.302s] running build
+[8.303s] running build_py
+[8.304s] creating /home/iris/RVI/build/r6/build
+[8.304s] creating /home/iris/RVI/build/r6/build/lib
+[8.308s] creating /home/iris/RVI/build/r6/build/lib/r6
+[8.310s] copying r6/__init__.py -> /home/iris/RVI/build/r6/build/lib/r6
+[8.312s] running install
+[8.319s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[8.320s]   warnings.warn(
+[8.321s] running install_lib
+[8.323s] creating /home/iris/RVI/install/r6/lib/python3.10/site-packages/r6
+[8.324s] copying /home/iris/RVI/build/r6/build/lib/r6/__init__.py -> /home/iris/RVI/install/r6/lib/python3.10/site-packages/r6
+[8.328s] byte-compiling /home/iris/RVI/install/r6/lib/python3.10/site-packages/r6/__init__.py to __init__.cpython-310.pyc
+[8.331s] running install_data
+[8.334s] creating /home/iris/RVI/install/r6/share/ament_index
+[8.335s] creating /home/iris/RVI/install/r6/share/ament_index/resource_index
+[8.336s] creating /home/iris/RVI/install/r6/share/ament_index/resource_index/packages
+[8.336s] copying resource/r6 -> /home/iris/RVI/install/r6/share/ament_index/resource_index/packages
+[8.337s] copying package.xml -> /home/iris/RVI/install/r6/share/r6
+[8.338s] running install_egg_info
+[8.349s] Copying ../../build/r6/r6.egg-info to /home/iris/RVI/install/r6/lib/python3.10/site-packages/r6-0.0.0-py3.10.egg-info
+[8.359s] running install_scripts
+[8.487s] writing list of installed files to '/home/iris/RVI/build/r6/install.log'
+[8.689s] Invoked command in '/home/iris/RVI/src/r6' returned '0': PYTHONPATH=/home/iris/RVI/build/r6/prefix_override:/home/iris/RVI/install/r6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/r6 build --build-base /home/iris/RVI/build/r6/build install --record /home/iris/RVI/build/r6/install.log --single-version-externally-managed

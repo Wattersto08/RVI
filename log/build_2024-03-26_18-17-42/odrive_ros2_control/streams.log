@@ -1,0 +1,39 @@
+[0.234s] Invoking command in '/home/iris/RVI/build/odrive_ros2_control': AMENT_PREFIX_PATH=/home/iris/RVI/install/odrive_demo_bringup:/home/iris/RVI/install/odrive_hardware_interface:/home/iris/RVI/install/odrive_demo_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/iris/RVI/install/odrive_demo_bringup:/home/iris/RVI/install/odrive_hardware_interface:/home/iris/RVI/install/odrive_demo_description:/opt/ros/humble LD_LIBRARY_PATH=/home/iris/RVI/install/odrive_hardware_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/iris/RVI/src/odrive_ros2_control/odrive_ros2_control -DCMAKE_INSTALL_PREFIX=/home/iris/RVI/install/odrive_ros2_control
+[0.490s] -- The C compiler identification is GNU 11.4.0
+[0.739s] -- The CXX compiler identification is GNU 11.4.0
+[0.771s] -- Detecting C compiler ABI info
+[1.081s] -- Detecting C compiler ABI info - done
+[1.108s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.109s] -- Detecting C compile features
+[1.111s] -- Detecting C compile features - done
+[1.121s] -- Detecting CXX compiler ABI info
+[1.474s] -- Detecting CXX compiler ABI info - done
+[1.502s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.504s] -- Detecting CXX compile features
+[1.506s] -- Detecting CXX compile features - done
+[1.527s] -- Found ament_cmake_auto: 1.3.7 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[2.249s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[3.074s] -- Configuring done
+[3.091s] -- Generating done
+[3.095s] -- Build files have been written to: /home/iris/RVI/build/odrive_ros2_control
+[3.110s] Invoked command in '/home/iris/RVI/build/odrive_ros2_control' returned '0': AMENT_PREFIX_PATH=/home/iris/RVI/install/odrive_demo_bringup:/home/iris/RVI/install/odrive_hardware_interface:/home/iris/RVI/install/odrive_demo_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/iris/RVI/install/odrive_demo_bringup:/home/iris/RVI/install/odrive_hardware_interface:/home/iris/RVI/install/odrive_demo_description:/opt/ros/humble LD_LIBRARY_PATH=/home/iris/RVI/install/odrive_hardware_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/iris/RVI/src/odrive_ros2_control/odrive_ros2_control -DCMAKE_INSTALL_PREFIX=/home/iris/RVI/install/odrive_ros2_control
+[3.119s] Invoking command in '/home/iris/RVI/build/odrive_ros2_control': AMENT_PREFIX_PATH=/home/iris/RVI/install/odrive_demo_bringup:/home/iris/RVI/install/odrive_hardware_interface:/home/iris/RVI/install/odrive_demo_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/iris/RVI/install/odrive_demo_bringup:/home/iris/RVI/install/odrive_hardware_interface:/home/iris/RVI/install/odrive_demo_description:/opt/ros/humble LD_LIBRARY_PATH=/home/iris/RVI/install/odrive_hardware_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/iris/RVI/build/odrive_ros2_control -- -j4 -l4
+[3.261s] Invoked command in '/home/iris/RVI/build/odrive_ros2_control' returned '0': AMENT_PREFIX_PATH=/home/iris/RVI/install/odrive_demo_bringup:/home/iris/RVI/install/odrive_hardware_interface:/home/iris/RVI/install/odrive_demo_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/iris/RVI/install/odrive_demo_bringup:/home/iris/RVI/install/odrive_hardware_interface:/home/iris/RVI/install/odrive_demo_description:/opt/ros/humble LD_LIBRARY_PATH=/home/iris/RVI/install/odrive_hardware_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/iris/RVI/build/odrive_ros2_control -- -j4 -l4
+[3.364s] Invoking command in '/home/iris/RVI/build/odrive_ros2_control': AMENT_PREFIX_PATH=/home/iris/RVI/install/odrive_demo_bringup:/home/iris/RVI/install/odrive_hardware_interface:/home/iris/RVI/install/odrive_demo_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/iris/RVI/install/odrive_demo_bringup:/home/iris/RVI/install/odrive_hardware_interface:/home/iris/RVI/install/odrive_demo_description:/opt/ros/humble LD_LIBRARY_PATH=/home/iris/RVI/install/odrive_hardware_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/iris/RVI/build/odrive_ros2_control
+[3.394s] -- Install configuration: ""
+[3.395s] -- Installing: /home/iris/RVI/install/odrive_ros2_control/share/ament_index/resource_index/package_run_dependencies/odrive_ros2_control
+[3.396s] -- Installing: /home/iris/RVI/install/odrive_ros2_control/share/ament_index/resource_index/parent_prefix_path/odrive_ros2_control
+[3.398s] -- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/environment/ament_prefix_path.sh
+[3.399s] -- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/environment/ament_prefix_path.dsv
+[3.400s] -- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/environment/path.sh
+[3.402s] -- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/environment/path.dsv
+[3.403s] -- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.bash
+[3.404s] -- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.sh
+[3.405s] -- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.zsh
+[3.406s] -- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.dsv
+[3.407s] -- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/package.dsv
+[3.409s] -- Installing: /home/iris/RVI/install/odrive_ros2_control/share/ament_index/resource_index/packages/odrive_ros2_control
+[3.410s] -- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/cmake/odrive_ros2_controlConfig.cmake
+[3.411s] -- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/cmake/odrive_ros2_controlConfig-version.cmake
+[3.413s] -- Installing: /home/iris/RVI/install/odrive_ros2_control/share/odrive_ros2_control/package.xml
+[3.419s] Invoked command in '/home/iris/RVI/build/odrive_ros2_control' returned '0': AMENT_PREFIX_PATH=/home/iris/RVI/install/odrive_demo_bringup:/home/iris/RVI/install/odrive_hardware_interface:/home/iris/RVI/install/odrive_demo_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/iris/RVI/install/odrive_demo_bringup:/home/iris/RVI/install/odrive_hardware_interface:/home/iris/RVI/install/odrive_demo_description:/opt/ros/humble LD_LIBRARY_PATH=/home/iris/RVI/install/odrive_hardware_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/iris/RVI/build/odrive_ros2_control

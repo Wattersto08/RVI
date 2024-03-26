@@ -1,0 +1,44 @@
+[0.431s] Invoking command in '/home/iris/RVI/build/odrive_demo_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/iris/RVI/src/odrive_ros2_control/odrive_demo_description -DCMAKE_INSTALL_PREFIX=/home/iris/RVI/install/odrive_demo_description
+[1.149s] -- The C compiler identification is GNU 11.4.0
+[1.435s] -- The CXX compiler identification is GNU 11.4.0
+[1.476s] -- Detecting C compiler ABI info
+[1.824s] -- Detecting C compiler ABI info - done
+[1.849s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.852s] -- Detecting C compile features
+[1.855s] -- Detecting C compile features - done
+[1.870s] -- Detecting CXX compiler ABI info
+[2.235s] -- Detecting CXX compiler ABI info - done
+[2.263s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.264s] -- Detecting CXX compile features
+[2.265s] -- Detecting CXX compile features - done
+[2.283s] -- Found ament_cmake_auto: 1.3.7 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[3.151s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[4.037s] -- Configuring done
+[4.056s] -- Generating done
+[4.060s] -- Build files have been written to: /home/iris/RVI/build/odrive_demo_description
+[4.075s] Invoked command in '/home/iris/RVI/build/odrive_demo_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/iris/RVI/src/odrive_ros2_control/odrive_demo_description -DCMAKE_INSTALL_PREFIX=/home/iris/RVI/install/odrive_demo_description
+[4.083s] Invoking command in '/home/iris/RVI/build/odrive_demo_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/iris/RVI/build/odrive_demo_description -- -j4 -l4
+[4.216s] Invoked command in '/home/iris/RVI/build/odrive_demo_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/iris/RVI/build/odrive_demo_description -- -j4 -l4
+[4.351s] Invoking command in '/home/iris/RVI/build/odrive_demo_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/iris/RVI/build/odrive_demo_description
+[4.374s] -- Install configuration: ""
+[4.374s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/urdf
+[4.375s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive.urdf.xacro
+[4.375s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive.ros2_control.xacro
+[4.377s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive_rrbot.urdf.xacro
+[4.378s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive_diffbot.urdf.xacro
+[4.379s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/ament_index/resource_index/package_run_dependencies/odrive_demo_description
+[4.381s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/ament_index/resource_index/parent_prefix_path/odrive_demo_description
+[4.383s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/environment/ament_prefix_path.sh
+[4.384s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/environment/ament_prefix_path.dsv
+[4.385s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/environment/path.sh
+[4.386s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/environment/path.dsv
+[4.388s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/local_setup.bash
+[4.389s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/local_setup.sh
+[4.390s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/local_setup.zsh
+[4.391s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/local_setup.dsv
+[4.393s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/package.dsv
+[4.394s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/ament_index/resource_index/packages/odrive_demo_description
+[4.396s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/cmake/odrive_demo_descriptionConfig.cmake
+[4.397s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/cmake/odrive_demo_descriptionConfig-version.cmake
+[4.398s] -- Installing: /home/iris/RVI/install/odrive_demo_description/share/odrive_demo_description/package.xml
+[4.404s] Invoked command in '/home/iris/RVI/build/odrive_demo_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/iris/RVI/build/odrive_demo_description

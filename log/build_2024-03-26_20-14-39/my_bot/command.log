@@ -1,0 +1,6 @@
+Invoking command in '/home/iris/RVI/build/my_bot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/iris/RVI/src/r6 -DCMAKE_INSTALL_PREFIX=/home/iris/RVI/install/my_bot
+Invoked command in '/home/iris/RVI/build/my_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/iris/RVI/src/r6 -DCMAKE_INSTALL_PREFIX=/home/iris/RVI/install/my_bot
+Invoking command in '/home/iris/RVI/build/my_bot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/iris/RVI/build/my_bot -- -j4 -l4
+Invoked command in '/home/iris/RVI/build/my_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/iris/RVI/build/my_bot -- -j4 -l4
+Invoking command in '/home/iris/RVI/build/my_bot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/iris/RVI/build/my_bot
+Invoked command in '/home/iris/RVI/build/my_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/iris/RVI/build/my_bot

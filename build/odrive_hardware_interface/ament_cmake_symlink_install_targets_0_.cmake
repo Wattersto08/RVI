@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/iris/RVI/build/odrive_hardware_interface/libodrive_usb.so" "/home/iris/RVI/build/odrive_hardware_interface/libodrive_hardware_interface.so" "TARGETS" "odrive_usb" "odrive_hardware_interface" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

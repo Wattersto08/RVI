@@ -1,0 +1,27 @@
+-- Install configuration: ""
+-- Up-to-date: /home/iris/RVI/install/r6/share/r6/config
+-- Up-to-date: /home/iris/RVI/install/r6/share/r6/config/empty.yaml
+-- Up-to-date: /home/iris/RVI/install/r6/share/r6/description
+-- Installing: /home/iris/RVI/install/r6/share/r6/description/inertial_macros.xacro
+-- Installing: /home/iris/RVI/install/r6/share/r6/description/robot.urdf.xacro
+-- Installing: /home/iris/RVI/install/r6/share/r6/description/lidar.xacro
+-- Installing: /home/iris/RVI/install/r6/share/r6/description/robot_core.xacro
+-- Up-to-date: /home/iris/RVI/install/r6/share/r6/launch
+-- Up-to-date: /home/iris/RVI/install/r6/share/r6/launch/rsp.launch.py
+-- Up-to-date: /home/iris/RVI/install/r6/share/r6/worlds
+-- Up-to-date: /home/iris/RVI/install/r6/share/r6/worlds/empty.world
+-- Up-to-date: /home/iris/RVI/install/r6/share/ament_index/resource_index/package_run_dependencies/r6
+-- Up-to-date: /home/iris/RVI/install/r6/share/ament_index/resource_index/parent_prefix_path/r6
+-- Up-to-date: /home/iris/RVI/install/r6/share/r6/environment/ament_prefix_path.sh
+-- Up-to-date: /home/iris/RVI/install/r6/share/r6/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/iris/RVI/install/r6/share/r6/environment/path.sh
+-- Up-to-date: /home/iris/RVI/install/r6/share/r6/environment/path.dsv
+-- Up-to-date: /home/iris/RVI/install/r6/share/r6/local_setup.bash
+-- Up-to-date: /home/iris/RVI/install/r6/share/r6/local_setup.sh
+-- Up-to-date: /home/iris/RVI/install/r6/share/r6/local_setup.zsh
+-- Up-to-date: /home/iris/RVI/install/r6/share/r6/local_setup.dsv
+-- Installing: /home/iris/RVI/install/r6/share/r6/package.dsv
+-- Up-to-date: /home/iris/RVI/install/r6/share/ament_index/resource_index/packages/r6
+-- Up-to-date: /home/iris/RVI/install/r6/share/r6/cmake/r6Config.cmake
+-- Up-to-date: /home/iris/RVI/install/r6/share/r6/cmake/r6Config-version.cmake
+-- Up-to-date: /home/iris/RVI/install/r6/share/r6/package.xml
